@@ -21,3 +21,18 @@ const styles = StyleSheet.create({
 })
 
 
+export default class App extends React.Component {
+
+	render() {
+		return (
+			<View style={[styles.clockContainer, styles.fill]}>				
+				<Text>  {this.state.TIMER[0].text}  </Text>
+				<Text>  {this.state.TIMER[0].time}    </Text>
+				<Button onPress={() => this.startOrPauseTimer()} title={this.state.TIMER[0].running_state_text} />
+				<Button onPress={() => this.resetTimer()} title="RESET" />
+			</View>
+
+		)
+	}
+	
+}

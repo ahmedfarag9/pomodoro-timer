@@ -25,9 +25,22 @@ export default class App extends React.Component {
 	constructor() {
 		super()
 		this.state = {
+			TIMER: [
+				{
+					work_time: work_time,
+					break_time: break_time,
+					work_time_text: work_time_text,
+					break_time_text: break_time_text,
+					running_state: true,
+					running_state_text: pause_state_text,
+					text: work_time_text,
+					time: work_time
+				}
+			],
 		}
 	}
 
+}
 
 	render() {
 		return (

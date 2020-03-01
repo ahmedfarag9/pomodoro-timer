@@ -40,6 +40,31 @@ export default class App extends React.Component {
 		}
 	}
 
+	startOrPauseTimer() {
+
+		if (this.state.TIMER[0].running_state === true) {
+
+			this.setState({
+
+				TIMER: this.state.TIMER.map(element =>  {
+					if (element.element === null) return element
+
+					return	{
+						work_time: work_time,
+						break_time: break_time,
+						work_time_text: work_time_text,
+						break_time_text: break_time_text,
+						running_state: false,
+						running_state_text: start_state_text,
+						text: break_time_text,
+						time: break_time
+						}
+
+			})
+		})
+
+	}
+	
 }
 
 	render() {

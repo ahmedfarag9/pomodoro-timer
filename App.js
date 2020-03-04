@@ -46,6 +46,13 @@ export default class App extends React.Component {
 
 			if (this.state.timerOn === false) {
 			this.setState({
+							timerOn: true,
+							timerOn_text: pause_state_text,
+							text: work_time_text,
+							timerStart: this.state.timerTime,
+							timerTime: this.state.timerTime,
+							time: this.state.timerTime
+					})
 
 				TIMER: this.state.TIMER.map(element =>  {
 					if (element.element === null) return element

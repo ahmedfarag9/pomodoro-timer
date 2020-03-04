@@ -42,8 +42,9 @@ export default class App extends React.Component {
 
 	startOrPauseTimer() {
 
-		if (this.state.TIMER[0].running_state === true) {
+		if (this.state.running_state === "work") {
 
+			if (this.state.timerOn === false) {
 			this.setState({
 
 				TIMER: this.state.TIMER.map(element =>  {

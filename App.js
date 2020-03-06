@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Button, Text, StyleSheet} from 'react-native'
-//import {Constants} from 'expo'
+import {View, Button, Text, StyleSheet, TouchableOpacity, TextInput} from 'react-native'
+
 
 let work_time = 5000
 let break_time = 5000

@@ -117,7 +117,7 @@ export default class App extends React.Component {
 		let hours = ("0" + Math.floor((time / 3600000) % 60)).slice(-2)
 
 		return (
-			<View style={[styles.clockContainer, styles.fill]}>				
+			<View style = {styles.container}>
 				<Text>  {this.state.text}  </Text>
 				<Text>  {this.state.time}    </Text>
 				<Text>  {hours} : {minutes} : {seconds}    </Text>

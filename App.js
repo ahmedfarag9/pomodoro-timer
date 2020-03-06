@@ -13,6 +13,16 @@ const styles = StyleSheet.create({
 	clockContainer:{
 		flexDirection: 'row',
 		alignItems: 'center'
+	},
+	container: {
+        paddingTop: 23
+    },
+    input: {
+        margin: 15,
+        height: 40,
+        borderColor: '#7a42f4',
+        borderWidth: 1
+    },
 	}
 	/*appContainer: {
 		//paddingTop: Constants.statusBarHight,

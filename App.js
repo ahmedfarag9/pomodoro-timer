@@ -55,7 +55,10 @@ export default class App extends React.Component {
 					breakTime: break_time,
 					breakTime_const: break_time,
 					running_state: "work",
-					time: 0
+					time: work_time,
+					Work_Time_Mins: 0,
+					Work_Time_Secs: 0,
+					newTimerValues: false
 				}
 		}
 

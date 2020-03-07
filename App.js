@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Button, Text, StyleSheet, TouchableOpacity, TextInput, ImageBackground} from 'react-native'
+import {Vibrate} from './utils/vibrate.js'
 
 
 let work_time = 5000

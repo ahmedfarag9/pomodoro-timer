@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Button, Text, StyleSheet, TouchableOpacity, TextInput} from 'react-native'
+import {View, Button, Text, StyleSheet, TouchableOpacity, TextInput, ImageBackground} from 'react-native'
 
 
 let work_time = 5000

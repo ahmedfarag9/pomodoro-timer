@@ -39,6 +39,8 @@ const styles = StyleSheet.create({
 	}*/
 })
 
+
+
 export default class App extends React.Component {
 	constructor() {
 		super()
@@ -59,6 +61,8 @@ export default class App extends React.Component {
 					time: work_time,
 					Work_Time_Mins: 0,
 					Work_Time_Secs: 0,
+					Break_Time_Mins: 0,
+					Break_Time_Secs: 0,
 					newTimerValues: false
 				}
 		}

@@ -97,7 +97,16 @@ export default class App extends React.Component {
 							timerTime: newTime,
 							time: newTime
 						});
+					} else {
+						Vibrate()
+						clearInterval(this.timer)
+						this.setState({ 
+								timerOn: false,
+								running_state: "break" 
+					})
+						this.startOrPauseTimer()
 						}
+				}, 10);
 
 			})
 		})

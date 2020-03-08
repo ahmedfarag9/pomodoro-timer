@@ -69,6 +69,15 @@ export default class App extends React.Component {
 
 	startOrPauseTimer() {
 
+
+		if (this.state.newTimerValues === true) {
+			clearInterval(this.timer)
+			this.setState({
+				newTimerValues: false
+			})
+		}			
+
+
 		if (this.state.running_state === "work") {
 
 			if (this.state.timerOn === false) {

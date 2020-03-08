@@ -108,6 +108,12 @@ export default class App extends React.Component {
 						}
 				}, 10);
 
+			} else {
+
+				clearInterval(this.timer)
+				this.setState({
+							timerOn: false,
+							timerOn_text: start_state_text,
 			})
 		})
 

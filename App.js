@@ -140,8 +140,9 @@ export default class App extends React.Component {
 						});
 					} else {
 						Vibrate()
+						this.resetTimer()
 	}
-		else {
+				}, 10);
 
 			this.setState({
 

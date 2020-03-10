@@ -138,6 +138,8 @@ export default class App extends React.Component {
 							breakTime: newTime,
 							time: newTime
 						});
+					} else {
+						Vibrate()
 	}
 		else {
 

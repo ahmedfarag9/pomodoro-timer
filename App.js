@@ -131,6 +131,13 @@ export default class App extends React.Component {
 							time: this.state.breakTime
 		})
 
+				this.timer = setInterval( () => {
+					const newTime = this.state.breakTime - 10
+					if (newTime >= 0) {
+						this.setState({
+							breakTime: newTime,
+							time: newTime
+						});
 	}
 		else {
 

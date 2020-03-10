@@ -115,6 +115,20 @@ export default class App extends React.Component {
 							timerOn: false,
 							timerOn_text: start_state_text,
 			})
+				}
+		}
+
+		
+		if (this.state.running_state === "break") {
+		
+			if (this.state.timerOn === false) {
+				this.setState({
+							timerOn: true,
+							timerOn_text: pause_state_text,
+							text: break_time_text,
+							timerStart: this.state.breakTime,
+							breakTime: this.state.breakTime,
+							time: this.state.breakTime
 		})
 
 	}

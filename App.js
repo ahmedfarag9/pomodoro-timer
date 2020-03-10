@@ -144,10 +144,16 @@ export default class App extends React.Component {
 	}
 				}, 10);
 
-			this.setState({
+			} else {
 
-				TIMER: this.state.TIMER.map(element =>  {
-					if (element.element === null) return element
+				clearInterval(this.timer)
+			this.setState({
+							timerOn: false,
+							timerOn_text: start_state_text,
+							})
+				}	
+		}
+
 
 					return	{
 						work_time: work_time,

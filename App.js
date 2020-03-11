@@ -171,8 +171,6 @@ export default class App extends React.Component {
 						})
 						}
 
-			})
-		})	
 
     handleWorkTimeMins = (Text) => {
 		this.setState({ Work_Time_Mins: Number(Text) })

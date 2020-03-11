@@ -158,8 +158,17 @@ export default class App extends React.Component {
 	}
 
 	resetTimer() {
+			clearInterval(this.timer)
+			this.setState({
+						running_state: "work",
+						timerOn: false,
+						timerOn_text: start_state_text,
 						text: work_time_text,
-						time: work_time
+						timerTime: this.state.timerTime_const,
+						time: this.state.timerTime_const,
+						breakTime: this.state.breakTime_const,
+						// timerStart: this.state.timerTime_const,
+						})
 						}
 
 			})

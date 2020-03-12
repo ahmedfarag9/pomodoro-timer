@@ -185,6 +185,7 @@ export default class App extends React.Component {
 		this.setState({ Break_Time_Secs: Number(Text) })
 	}
 
+    login = (Work_Time_Mins, Work_Time_Secs, Break_Time_Mins, Break_Time_Secs) => {
 
 
 	render() {

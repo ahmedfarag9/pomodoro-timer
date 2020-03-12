@@ -178,6 +178,9 @@ export default class App extends React.Component {
     handleWorkTimeSecs = (Text) => {
 		this.setState({ Work_Time_Secs: Number(Text) })
 }
+	handleBreakTimeMins = (Text) => {
+		this.setState({ Break_Time_Mins: Number(Text) })
+    }
 
 
 

@@ -187,6 +187,8 @@ export default class App extends React.Component {
 
     login = (Work_Time_Mins, Work_Time_Secs, Break_Time_Mins, Break_Time_Secs) => {
 
+		let workManualTime = Work_Time_Secs * 1000 + Work_Time_Mins * 60 * 1000
+		let breakManualTime = Break_Time_Secs * 1000 + Break_Time_Mins * 60 * 1000
 
 	render() {
 		const { time } = this.state

@@ -190,6 +190,21 @@ export default class App extends React.Component {
 		let workManualTime = Work_Time_Secs * 1000 + Work_Time_Mins * 60 * 1000
 		let breakManualTime = Break_Time_Secs * 1000 + Break_Time_Mins * 60 * 1000
 
+		this.setState({
+			running_state: "work",
+			timerOn: false,
+			timerOn_text: start_state_text,
+			text: work_time_text,
+			timerTime: workManualTime,
+			timerTime_const: workManualTime,
+			time: workManualTime,
+			breakTime: breakManualTime,
+			breakTime_const: breakManualTime,
+			newTimerValues: true
+			})
+	}
+
+	
 	render() {
 		const { time } = this.state
 		let seconds = ("0" + (Math.floor((time / 1000) % 60) % 60)).slice(-2)

@@ -225,6 +225,14 @@ export default class App extends React.Component {
 					keyboardType={'numeric'}
 					onChangeText = {this.handleWorkTimeMins}/>
             
+	            <TextInput style = {styles.input}
+					underlineColorAndroid = "transparent"
+					placeholder = "Work Time Secs"
+					placeholderTextColor = "#9a73ef"
+					autoCapitalize = "none"
+					keyboardType={'numeric'}
+					onChangeText = {this.handleWorkTimeSecs}/>
+
 			</View>
 		)
 	}

@@ -216,6 +216,15 @@ export default class App extends React.Component {
 				<Text>  {minutes} : {seconds}    </Text>
 				<Button onPress={() => this.startOrPauseTimer()} title={this.state.timerOn_text} />
 				<Button onPress={() => this.resetTimer()} title="RESET" />
+
+	            <TextInput style = {styles.input}
+					underlineColorAndroid = "transparent"
+					placeholder = "Work Time Mins"
+					placeholderTextColor = "#9a73ef"
+					autoCapitalize = "none"
+					keyboardType={'numeric'}
+					onChangeText = {this.handleWorkTimeMins}/>
+            
 			</View>
 		)
 	}

@@ -213,8 +213,7 @@ export default class App extends React.Component {
 		return (
 			<View style = {styles.container}>
 				<Text>  {this.state.text}  </Text>
-				<Text>  {this.state.time}    </Text>
-				<Text>  {hours} : {minutes} : {seconds}    </Text>
+				<Text>  {minutes} : {seconds}    </Text>
 				<Button onPress={() => this.startOrPauseTimer()} title={this.state.timerOn_text} />
 				<Button onPress={() => this.resetTimer()} title="RESET" />
 			</View>

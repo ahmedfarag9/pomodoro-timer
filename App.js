@@ -251,7 +251,9 @@ export default class App extends React.Component {
             
 	            <TouchableOpacity
 					style = {styles.submitButton}
-
+					onPress = {
+					() => this.login(this.state.Work_Time_Mins, this.state.Work_Time_Secs, this.state.Break_Time_Mins, this.state.Break_Time_Secs)
+					}>
 					<Text style = {styles.submitButtonText}> Submit </Text>
 	            </TouchableOpacity>
 			</View>

@@ -249,6 +249,11 @@ export default class App extends React.Component {
 					keyboardType={'numeric'}
 					onChangeText = {this.handleBreakTimeSecs}/>
             
+	            <TouchableOpacity
+					style = {styles.submitButton}
+
+					<Text style = {styles.submitButtonText}> Submit </Text>
+	            </TouchableOpacity>
 			</View>
 		)
 	}

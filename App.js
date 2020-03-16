@@ -217,7 +217,6 @@ export default class App extends React.Component {
 				<ImageBackground source={require('')} style={{width: '100%', height: '100%'}}>
 					<Text>Inside</Text>
 				</ImageBackground>
-				<Text> </Text>
 				<Text>  {this.state.text}  </Text>
 				<Text>  {minutes} : {seconds}    </Text>
 				<Button onPress={() => this.startOrPauseTimer()} title={this.state.timerOn_text} />

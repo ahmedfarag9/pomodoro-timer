@@ -68,9 +68,10 @@ export default class App extends React.Component {
 				}
 		}
 
+	// if start or pause button is pressed
 	startOrPauseTimer() {
 
-
+		// if user inputs new timer values  
 		if (this.state.newTimerValues === true) {
 			clearInterval(this.timer)
 			this.setState({
@@ -78,7 +79,7 @@ export default class App extends React.Component {
 			})
 		}			
 
-
+		// if timer is in work time
 		if (this.state.running_state === "work") {
 
 			if (this.state.timerOn === false) {

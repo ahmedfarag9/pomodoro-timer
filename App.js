@@ -95,8 +95,11 @@ export default class App extends React.Component {
 							time: this.state.timerTime
 					})
 
+				// decrease timer time every sec								
 				this.timer = setInterval( () => {
 					const newTime = this.state.timerTime - 10
+					
+					// if timer time is >= 1
 					if (newTime >= 1) {
 						this.setState({
 							timerTime: newTime,

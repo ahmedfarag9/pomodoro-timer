@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
 export default class App extends React.Component {
 	constructor() {
 		super()
+	
+		// setting state values						
 		this.state = {
 					work_time: work_time,
 					break_time: break_time,
@@ -82,6 +84,7 @@ export default class App extends React.Component {
 		// if timer is in work time
 		if (this.state.running_state === "work") {
 
+			// if timer is running
 			if (this.state.timerOn === false) {
 			this.setState({
 							timerOn: true,

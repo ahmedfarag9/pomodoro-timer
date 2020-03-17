@@ -105,7 +105,11 @@ export default class App extends React.Component {
 							timerTime: newTime,
 							time: newTime
 						});
+					
+					// else if timer time = zero
 					} else {
+						
+						// vibrate phone
 						Vibrate()
 						clearInterval(this.timer)
 						this.setState({ 
@@ -116,6 +120,7 @@ export default class App extends React.Component {
 						}
 				}, 10);
 
+			// else if timer is paused				
 			} else {
 
 				clearInterval(this.timer)

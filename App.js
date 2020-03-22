@@ -131,9 +131,10 @@ export default class App extends React.Component {
 				}
 		}
 
-		
+		// if timer is in break time		
 		if (this.state.running_state === "break") {
 		
+			// if timer is running			
 			if (this.state.timerOn === false) {
 				this.setState({
 							timerOn: true,
@@ -144,6 +145,7 @@ export default class App extends React.Component {
 							time: this.state.breakTime
 		})
 
+				// decrease timer time every sec								
 				this.timer = setInterval( () => {
 					const newTime = this.state.breakTime - 10
 					if (newTime >= 0) {
@@ -151,12 +153,15 @@ export default class App extends React.Component {
 							breakTime: newTime,
 							time: newTime
 						});
+
+					// if timer time is >= 1						
 					} else {
 						Vibrate()
 						this.resetTimer()
 	}
 				}, 10);
 
+			// else if timer is paused								
 			} else {
 
 				clearInterval(this.timer)
@@ -170,6 +175,7 @@ export default class App extends React.Component {
 
 	}
 
+	// if reset button is pressed	
 	resetTimer() {
 			clearInterval(this.timer)
 			this.setState({

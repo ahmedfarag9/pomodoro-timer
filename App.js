@@ -190,20 +190,27 @@ export default class App extends React.Component {
 						})
 						}
 
-
+	// handle work mins which user inputs
     handleWorkTimeMins = (Text) => {
 		this.setState({ Work_Time_Mins: Number(Text) })
 	}
+	
+	// handle work secs which user inputs	
     handleWorkTimeSecs = (Text) => {
 		this.setState({ Work_Time_Secs: Number(Text) })
 }
+	
+	// handle break mins which user inputs		
 	handleBreakTimeMins = (Text) => {
 		this.setState({ Break_Time_Mins: Number(Text) })
     }
+	
+	// handle secs mins which user inputs		
     handleBreakTimeSecs = (Text) => {
 		this.setState({ Break_Time_Secs: Number(Text) })
 	}
 
+	// if login button is pressed
     login = (Work_Time_Mins, Work_Time_Secs, Break_Time_Mins, Break_Time_Secs) => {
 
 		let workManualTime = Work_Time_Secs * 1000 + Work_Time_Mins * 60 * 1000
@@ -223,8 +230,9 @@ export default class App extends React.Component {
 			})
 	}
 
-	
 	render() {
+		
+		// render variables
 		const { time } = this.state
 		let seconds = ("0" + (Math.floor((time / 1000) % 60) % 60)).slice(-2)
 		let minutes = ("0" + Math.floor((time / 60000) % 60)).slice(-2)
